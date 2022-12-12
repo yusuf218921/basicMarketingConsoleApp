@@ -11,7 +11,7 @@ public class MainMenu{
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
             System.out.println("1-) Hesaba giriş yap");
             System.out.println("2-) Yeni Hesap Oluştur");
-            System.out.println("0-) Uygulamadan çıkış yap");
+            System.out.println("3-) Uygulamadan çıkış yap");
 
             System.out.print("\n\n\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
 
