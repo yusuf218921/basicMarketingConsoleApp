@@ -14,7 +14,6 @@ public class AccountLogin extends Main{
             password=scanner.next();;
             if(new AccountQuery(username,password).loginQuery(accounts)){
                 girisId=new AccountQuery(username,password).loginId(accounts);
-                System.out.println("Girmis oldugunuz kullanıcı idsi: "+accounts.get(girisId).getId());
                 kontrol=false;
                 System.out.println("Başarıyla giriş yaptınız ,sisteme yönlendiriliyorsunuz lütfen bekleyiniz...");
                 try {

@@ -18,7 +18,6 @@ public class AccountRegister extends Main{
             }
             else{
                 kayitId++;
-                System.out.println(kayitId);
                 accounts.add(new Account());
                 accounts.get(kayitId).setUsername(username);
                 accounts.get(kayitId).setPassword(password);
