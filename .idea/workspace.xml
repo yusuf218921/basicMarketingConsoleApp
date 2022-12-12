@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="mainMenu - &gt; giris ekranı son hali tamamlandı">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="recep halis mulis dünyanın en iyi adamıdır">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,13 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670850628118</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="recep halis mulis dünyanın en iyi adamıdır">
+      <created>1670875699203</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670875699203</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mainMenu baslangıc" />
     <MESSAGE value="mainMenu - &gt; giris ekranı tamamlandı" />
     <MESSAGE value="mainMenu - &gt; giris ekranı son hali tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainMenu - &gt; giris ekranı son hali tamamlandı" />
+    <MESSAGE value="recep halis mulis dünyanın en iyi adamıdır" />
+    <option name="LAST_COMMIT_MESSAGE" value="recep halis mulis dünyanın en iyi adamıdır" />
   </component>
 </project>
