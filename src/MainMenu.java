@@ -30,6 +30,7 @@ public class MainMenu{
                     System.out.println("\n\n\n\n\n*********************GİRİŞ EKRANI*********************\n\n");
 
                     new AccountLogin().login();
+                    secenek=0;
                     break;
                 case 2:
                     System.out.println("Kayıt Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
@@ -52,7 +53,7 @@ public class MainMenu{
                         throw new RuntimeException(e);
                     }
                     break;
-                case 0:
+                case 3:
 
                     System.out.println("Çıkış yapılıyor lütfen bekleyiniz...");
 

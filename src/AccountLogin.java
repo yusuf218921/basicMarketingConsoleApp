@@ -21,8 +21,6 @@ public class AccountLogin extends Main{
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-
-                System.exit(0);
             }
             else {
                 System.out.println("Yanlış kullanııcı veya şifre girdiniz ,lütfen tekrar deneyiniz.");
