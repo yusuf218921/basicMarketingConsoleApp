@@ -4,14 +4,6 @@ public class AccountLogin extends Main{
     Scanner scanner = new Scanner(System.in);
     boolean kontrol=true;
     public void login(){
-        System.out.println("Giriş Ekranına yönlendiriliyorsunuz lütfen bekleyiniz...");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("\n\n\n\n\n*********************GİRİŞ EKRANI*********************\n\n");
-
         while (kontrol){
             String username;
             String password;
@@ -20,7 +12,9 @@ public class AccountLogin extends Main{
             username=scanner.next();
             System.out.print("Sifre: ");
             password=scanner.next();;
-            if(new AccountQuery(username,password).query(accounts)){
+            if(new AccountQuery(username,password).loginQuery(accounts)){
+                girisId=new AccountQuery(username,password).loginId(accounts);
+                System.out.println("Girmis oldugunuz kullanıcı idsi: "+accounts.get(girisId).getId());
                 kontrol=false;
                 System.out.println("Başarıyla giriş yaptınız ,sisteme yönlendiriliyorsunuz lütfen bekleyiniz...");
                 try {
@@ -28,6 +22,7 @@ public class AccountLogin extends Main{
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
+
                 System.exit(0);
             }
             else {
