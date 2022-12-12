@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainMenu {
+public class MainMenu{
     Scanner scanner = new Scanner(System.in);
     int secenek=-1;
 
@@ -12,6 +12,12 @@ public class MainMenu {
             System.out.println("3-) Uygulamadan çıkış yap");
             System.out.print("\n\n\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
             secenek = scanner.nextInt();
+            switch (secenek){
+                case 1:
+                    new AccountLogin().login();
+                    break;
+                case 2:
+            }
         }
 
     }
