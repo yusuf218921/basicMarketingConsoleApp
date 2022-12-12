@@ -9,5 +9,6 @@ public class Main {
         accounts.get(0).setPassword("218921");
         accounts.get(0).setId(0);
         new MainMenu().mainMenu();
+        System.out.println("Enes abim.");
     }
 }
