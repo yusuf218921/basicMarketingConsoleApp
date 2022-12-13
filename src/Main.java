@@ -12,9 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new MainMenu().mainMenu();
+        new MainMenu().menu();
         if (adminLogin) {
-            new AdminMenu().adminMenu();
+            new AdminMenu().menu();
         } else {
 
         }

@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class MainMenu extends Main {
+public class MainMenu extends Main implements Menu{
     Scanner scanner = new Scanner(System.in);
-
-
-    public void mainMenu() {
+    @Override
+    public void menu() {
         while (secenek != 0) {
 
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
@@ -70,6 +69,5 @@ public class MainMenu extends Main {
                     break;
             }
         }
-
     }
 }

@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class AdminMenu extends Main {
+public class AdminMenu extends Main implements Menu{
     Scanner scanner = new Scanner(System.in);
-
-    public void adminMenu() {
+    @Override
+    public void menu() {
         secenek = -1;
         while (secenek != 0) {
             System.out.println("\n\n**********************ADMİN MENÜSÜ**********************\n\n");
@@ -35,7 +35,7 @@ public class AdminMenu extends Main {
                             } catch (InterruptedException e) {
                                 throw new RuntimeException(e);
                             }
-                            new MainMenu().mainMenu();
+                            new MainMenu().menu();
                         } else {
                             System.out.print("Geçersiz sayı girdiniz lütfen tekrar giriniz -> ");
                         }
@@ -54,7 +54,7 @@ public class AdminMenu extends Main {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    new MainMenu().mainMenu();
+                    new MainMenu().menu();
                 default:
                     break;
             }
