@@ -56,10 +56,14 @@ public class CustomerMenu extends Main implements Menu {
                 }
                 case 3 -> {
                     int topUp;
+                    String no,cvv,expirationDate;
                     System.out.println("\n\nYükleme yapılacak kartın bilgilerini giriniz...");
-                    System.out.print("Kart Numarası: " + scanner.next());
-                    System.out.print("Kart CVV: " + scanner.next());
-                    System.out.print("Kart Son Kullanma Tarihi: " + scanner.next());
+                    System.out.print("Kart Numarası: ");
+                    no=scanner.next();
+                    System.out.print("Kart CVV: ");
+                    cvv=scanner.next();
+                    System.out.print("Kart Son Kullanma Tarihi: ");
+                    expirationDate=scanner.next();
                     System.out.print("Yükleme yapılacak tutar: ");
                     topUp = scanner.nextInt();
                     customers.get(girisId).loadBalance(topUp);
