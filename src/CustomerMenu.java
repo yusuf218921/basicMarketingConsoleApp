@@ -1,4 +1,3 @@
-
 public class CustomerMenu extends Main implements Menu {
 
     @Override
@@ -54,6 +53,41 @@ public class CustomerMenu extends Main implements Menu {
                             default -> System.out.println("Yanlış değer girdiniz lütfen tekrar deneyiniz");
                         }
                     }
+                }
+                case 3 -> {
+                    int topUp;
+                    System.out.println("\n\nYükleme yapılacak kartın bilgilerini giriniz...");
+                    System.out.print("Kart Numarası: " + scanner.next());
+                    System.out.print("Kart CVV: " + scanner.next());
+                    System.out.print("Kart Son Kullanma Tarihi: " + scanner.next());
+                    System.out.print("Yükleme yapılacak tutar: ");
+                    topUp = scanner.nextInt();
+                    customers.get(girisId).loadBalance(topUp);
+                    System.out.println("Yükleme Başarıyla gerçekleşti...");
+                    System.out.print("Devam etmek için herhangi bir tuşa basınız...");
+                    try {
+                        System.in.read();
+                    } catch (Exception e) {
+                    }
+                }
+                case 6 -> {
+                    System.out.println("Ana menüye geri gönderiliyorsunuz lütfen bekleyiniz...");
+                    secenek=0;
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+
+                }
+                case 7 -> {
+                    System.out.println("Sistemden Çıkış yapılıyor lütfen bekleyiniz...");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    System.exit(0);
                 }
             }
 

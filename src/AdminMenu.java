@@ -34,8 +34,8 @@ public class AdminMenu extends Main implements Menu {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    menus.add(new MainMenu());
-                    menus.get(menus.size() - 1).menu();
+                    menu = new MainMenu();
+                    menu.menu();
                     secenek = 0;
                     break;
                 default:

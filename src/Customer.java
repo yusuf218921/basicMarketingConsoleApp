@@ -1,9 +1,10 @@
-public class Customer extends Account{
+public class Customer extends Account {
     private String firstName;
     private String lastName;
     private String tel;
     private String email;
-    private int balance=0;
+    private int balance = 0;
+
     public String getFirstName() {
         return firstName;
     }
@@ -40,7 +41,11 @@ public class Customer extends Account{
         return balance;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void loadBalance(int topUp) {
+        balance += topUp;
+    }
+
+    public void withdrawBalance(int total) {
+        balance -= total;
     }
 }

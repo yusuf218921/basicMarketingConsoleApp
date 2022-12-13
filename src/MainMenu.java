@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MainMenu extends Main implements Menu {
     @Override
     public void menu() {
-        secenek=-1;
+        secenek = -1;
         while (secenek != 0) {
 
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
@@ -25,8 +25,9 @@ public class MainMenu extends Main implements Menu {
                     }
                     System.out.println("\n\n\n\n\n*********************GİRİŞ EKRANI*********************\n\n");
                     new AccountLogin().login();
-                    menus.add(new CustomerMenu());
-                    menus.get(menus.size() - 1).menu();
+                    menu = new CustomerMenu();
+                    menu.menu();
+                    secenek=-1;
                 }
                 case 2 -> {
                     System.out.println("Kayıt Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
@@ -56,8 +57,8 @@ public class MainMenu extends Main implements Menu {
                 }
                 case 0 -> {
                     new AdminLogin().adminLogin();
-                    menus.add(new AdminMenu());
-                    menus.get(menus.size() - 1).menu();
+                    menu = new AdminMenu();
+                    menu.menu();
                 }
                 default -> System.out.println("Hatalı numara girdiniz lütfen tekrar deneyiniz...");
             }
