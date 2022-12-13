@@ -17,12 +17,11 @@ public class AccountRegister extends Main {
                 System.out.print("\n\nGirmiş olduğunuz kullanıcı adı daha önce alınmıştır, kayıt işlemine devam etmek için \"1\", ana menüye geri dönmek için \"0\" yazınız -> ");
                 kontrol = scanner.nextBoolean();
             } else {
-                kayitId++;
                 accounts.add(new Account());
                 accounts.get(kayitId).setUsername(username);
                 accounts.get(kayitId).setPassword(password);
                 accounts.get(kayitId).setId(kayitId);
-
+                kayitId++;
                 kontrol = false;
                 System.out.print("Tebrikler başarıyla hesap oluşturdunuz, ana menüye yönlendiriliyorsunuz...\n\n");
             }

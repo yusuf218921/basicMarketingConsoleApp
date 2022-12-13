@@ -61,6 +61,13 @@ public class MainMenu extends Main{
                     }
 
                     System.exit(0);
+                    break;
+                case 0:
+                    new AdminLogin().adminLogin();
+                    break;
+                default:
+                    System.out.println("Hatalı numara girdiniz lütfen tekrar deneyiniz...");
+                    break;
             }
         }
 
