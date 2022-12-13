@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class CustomerMenu extends Main implements Menu {
 
@@ -34,8 +33,8 @@ public class CustomerMenu extends Main implements Menu {
                     break;
                 case 2:
                     int secenekGuncelleme;
-                    boolean kontrol=true;
-                    while (kontrol){
+                    boolean kontrol = true;
+                    while (kontrol) {
                         System.out.println("\n\n\n***************Güncelleme Ekranı***************\n\n");
                         System.out.println("1-) İsim");
                         System.out.println("2-) Soyisim");
@@ -44,9 +43,9 @@ public class CustomerMenu extends Main implements Menu {
                         System.out.println("5-) Geri Dön");
 
                         System.out.print("Lütfen güncellemek istediğiniz bilgiyi seçiniz -> ");
-                        secenekGuncelleme=scanner.nextInt();
+                        secenekGuncelleme = scanner.nextInt();
 
-                        switch (secenekGuncelleme){
+                        switch (secenekGuncelleme) {
                             case 1:
                                 new CustomerConfig().configFirstName();
                                 break;
@@ -60,7 +59,7 @@ public class CustomerMenu extends Main implements Menu {
                                 new CustomerConfig().configEmail();
                                 break;
                             case 5:
-                                kontrol=false;
+                                kontrol = false;
                                 break;
                             default:
                                 System.out.println("Yanlış değer girdiniz lütfen tekrar deneyiniz");

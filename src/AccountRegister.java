@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class AccountRegister extends Main {
     boolean kontrol = true;
