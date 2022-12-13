@@ -18,7 +18,7 @@ public class CustomerMenu extends Main implements Menu {
             secenek = scanner.nextInt();
 
             switch (secenek) {
-                case 1:
+                case 1 -> {
                     System.out.println("\n\n\n\n*****************Hesap Bilgilerim*****************\n\n");
                     System.out.println("İsim: " + customers.get(girisId).getFirstName());
                     System.out.println("Soyisim: " + customers.get(girisId).getLastName());
@@ -30,8 +30,8 @@ public class CustomerMenu extends Main implements Menu {
                         System.in.read();
                     } catch (Exception e) {
                     }
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     int secenekGuncelleme;
                     boolean kontrol = true;
                     while (kontrol) {
@@ -46,27 +46,15 @@ public class CustomerMenu extends Main implements Menu {
                         secenekGuncelleme = scanner.nextInt();
 
                         switch (secenekGuncelleme) {
-                            case 1:
-                                new CustomerConfig().configFirstName();
-                                break;
-                            case 2:
-                                new CustomerConfig().configLastName();
-                                break;
-                            case 3:
-                                new CustomerConfig().configTel();
-                                break;
-                            case 4:
-                                new CustomerConfig().configEmail();
-                                break;
-                            case 5:
-                                kontrol = false;
-                                break;
-                            default:
-                                System.out.println("Yanlış değer girdiniz lütfen tekrar deneyiniz");
-                                break;
+                            case 1 -> new CustomerConfig().configFirstName();
+                            case 2 -> new CustomerConfig().configLastName();
+                            case 3 -> new CustomerConfig().configTel();
+                            case 4 -> new CustomerConfig().configEmail();
+                            case 5 -> kontrol = false;
+                            default -> System.out.println("Yanlış değer girdiniz lütfen tekrar deneyiniz");
                         }
                     }
-                    break;
+                }
             }
 
 
