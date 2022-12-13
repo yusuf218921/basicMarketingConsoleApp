@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class AdminMenu extends Main implements Menu {
     @Override
     public void menu() {
@@ -18,12 +16,10 @@ public class AdminMenu extends Main implements Menu {
                 case 1:
                     new AccountsList().list();
                     System.out.println("Devam etmek için herhangi bir tuşa basın...");
-                    try
-                    {
+                    try {
                         System.in.read();
+                    } catch (Exception e) {
                     }
-                    catch(Exception e)
-                    {}
                     break;
                 case 2:
                     break;

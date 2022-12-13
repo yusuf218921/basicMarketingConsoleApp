@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class AccountLogin extends Main {
     boolean kontrol = true;
 
@@ -12,7 +10,7 @@ public class AccountLogin extends Main {
             username = scanner.next();
             System.out.print("Sifre: ");
             password = scanner.next();
-            ;
+
             if (new AccountQuery(username, password).loginQuery(accounts)) {
                 girisId = new AccountQuery(username, password).loginId(accounts);
                 kontrol = false;
