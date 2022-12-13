@@ -1,0 +1,46 @@
+Index: src/ProductManager.java
+===================================================================
+diff --git a/src/ProductManager.java b/src/ProductManager.java
+deleted file mode 100644
+--- a/src/ProductManager.java	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
++++ /dev/null	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
+@@ -1,3 +0,0 @@
+-public class ProductManager {
+-
+-}
+Index: src/Cart.java
+===================================================================
+diff --git a/src/Cart.java b/src/Cart.java
+deleted file mode 100644
+--- a/src/Cart.java	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
++++ /dev/null	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
+@@ -1,2 +0,0 @@
+-public class Cart {
+-}
+Index: src/Customer.java
+===================================================================
+diff --git a/src/Customer.java b/src/Customer.java
+deleted file mode 100644
+--- a/src/Customer.java	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
++++ /dev/null	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
+@@ -1,2 +0,0 @@
+-public class Customer {
+-}
+Index: src/Administrator.java
+===================================================================
+diff --git a/src/Administrator.java b/src/Administrator.java
+deleted file mode 100644
+--- a/src/Administrator.java	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
++++ /dev/null	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
+@@ -1,2 +0,0 @@
+-public class Administrator {
+-}
+Index: src/CustomerConfig.java
+===================================================================
+diff --git a/src/CustomerConfig.java b/src/CustomerConfig.java
+deleted file mode 100644
+--- a/src/CustomerConfig.java	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
++++ /dev/null	(revision cbe4cf0644d5965a8761640d328f046d2edfc6df)
+@@ -1,2 +0,0 @@
+-public class CustomerConfig {
+-}

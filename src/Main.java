@@ -6,8 +6,8 @@ public class Main {
     static int girisId;
 
     static int adminGirisId;
-    static ArrayList<Account> accounts = new ArrayList<Account>();
-    static ArrayList<Administrator> admins = new ArrayList<Administrator>();
+    static ArrayList<Account> accounts = new ArrayList<>();
+    static ArrayList<Administrator> admins = new ArrayList<>();
 
 
     public static void main(String[] args) {
