@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="eski menu">
-      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="Customer menu yapılma aşamasında">
       <change beforePath="$PROJECT_DIR$/src/AccountLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670954570410</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Customer menu yapılma aşamasında">
+      <created>1670962865422</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670962865422</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Customer menu yapılma aşamasında">
+      <created>1670962939786</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670962939786</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Customer menu yapılma aşamasında">
+      <created>1670963008112</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670963008112</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -277,7 +291,8 @@
     <MESSAGE value="admin için menude iyileştirmeler yapıldı" />
     <MESSAGE value="yeni menu" />
     <MESSAGE value="eski menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="eski menu" />
+    <MESSAGE value="Customer menu yapılma aşamasında" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer menu yapılma aşamasında" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
