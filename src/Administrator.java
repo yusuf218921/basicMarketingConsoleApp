@@ -3,6 +3,7 @@ public class Administrator {
     private String adminUsername;
     private String adminPassword;
     private int adminId;
+
     public String getAdminUsername() {
         return adminUsername;
     }
@@ -26,9 +27,6 @@ public class Administrator {
     public void setAdminId(int adminId) {
         this.adminId = adminId;
     }
-
-
-
 
 
 }

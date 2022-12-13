@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="hata düzeltmesi">
-      <change afterPath="$PROJECT_DIR$/src/AdminLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdminMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdminQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Administrator.java" afterDir="false" />
+    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="admin oluşturuldu">
+      <change afterPath="$PROJECT_DIR$/src/AccountsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Admins.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
     </list>
@@ -161,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670879226486</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="admin oluşturuldu">
+      <created>1670939231482</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670939231482</updated>
+    </task>
+    <task id="LOCAL-00015" summary="admin oluşturuldu">
+      <created>1670939287367</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670939287367</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,7 +196,8 @@
     <MESSAGE value="mainMenu - &gt; giris ekranı son hali tamamlandı" />
     <MESSAGE value="recep halis mulis dünyanın en iyi adamıdır" />
     <MESSAGE value="hata düzeltmesi" />
-    <option name="LAST_COMMIT_MESSAGE" value="hata düzeltmesi" />
+    <MESSAGE value="admin oluşturuldu" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin oluşturuldu" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

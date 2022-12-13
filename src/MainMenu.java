@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
-public class MainMenu extends Main{
+public class MainMenu extends Main {
     Scanner scanner = new Scanner(System.in);
-
 
 
     public void mainMenu() {
@@ -64,6 +63,7 @@ public class MainMenu extends Main{
                     break;
                 case 0:
                     new AdminLogin().adminLogin();
+                    adminLogin = true;
                     break;
                 default:
                     System.out.println("Hatalı numara girdiniz lütfen tekrar deneyiniz...");

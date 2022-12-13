@@ -18,7 +18,7 @@ public class AccountLogin extends Main {
                 girisId = new AccountQuery(username, password).loginId(accounts);
                 kontrol = false;
                 System.out.println("Başarıyla giriş yaptınız ,sisteme yönlendiriliyorsunuz lütfen bekleyiniz...");
-                secenek=0;
+                secenek = 0;
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
