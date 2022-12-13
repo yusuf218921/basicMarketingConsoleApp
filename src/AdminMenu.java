@@ -48,6 +48,12 @@ public class AdminMenu extends Main {
                 case 4:
                     break;
                 case 5:
+                    System.out.println("Ana menüye gönderiliyorsunuz lütfen bekleyiniz...");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                     new MainMenu().mainMenu();
                 default:
                     break;
