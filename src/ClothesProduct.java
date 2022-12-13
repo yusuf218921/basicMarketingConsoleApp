@@ -1,2 +1,2 @@
-public class ClothesProduct extends BaseProduct{
+public class ClothesProduct extends BaseProduct {
 }

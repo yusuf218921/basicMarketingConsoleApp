@@ -1,3 +1,3 @@
-public class ElectronicProduct extends BaseProduct{
-    
+public class ElectronicProduct extends BaseProduct {
+
 }

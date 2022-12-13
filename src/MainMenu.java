@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-public class MainMenu{
+public class MainMenu extends Main{
     Scanner scanner = new Scanner(System.in);
-    int secenek=-1;
+
 
 
     public void mainMenu() {
-        while(secenek!=0){
+        while (secenek != 0) {
+
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
             System.out.println("1-) Hesaba giriş yap");
             System.out.println("2-) Yeni Hesap Oluştur");
@@ -16,7 +17,7 @@ public class MainMenu{
 
             secenek = scanner.nextInt();
 
-            switch (secenek){
+            switch (secenek) {
                 case 1:
                     System.out.println("Giriş Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
 
@@ -29,7 +30,6 @@ public class MainMenu{
                     System.out.println("\n\n\n\n\n*********************GİRİŞ EKRANI*********************\n\n");
 
                     new AccountLogin().login();
-                    secenek=0;
                     break;
                 case 2:
                     System.out.println("Kayıt Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
@@ -42,8 +42,6 @@ public class MainMenu{
                     System.out.println("\n\n\n\n\n*********************KAYIT EKRANI*********************\n\n");
                     System.out.println("Hesap oluşturmak için aşağıdaki bilgileri doldurunuz...");
                     new AccountRegister().register();
-
-
 
 
                     try {
