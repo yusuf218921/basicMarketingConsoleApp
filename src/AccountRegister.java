@@ -14,7 +14,7 @@ public class AccountRegister extends Main {
             System.out.print("Şifre: ");
             password = scanner.next();
             if (new AccountQuery(username).registerQuery(accounts)) {
-                System.out.print("\n\nGirmiş olduğunuz kullanıcı adı daha önce alınmıştır, kayıt işlemine devam etmek için \"1\", ana menüye geri dönmek için \"0\" yazınız -> ");
+                System.out.print("\n\nGirmiş olduğunuz kullanıcı adı daha önce alınmıştır, kayıt işlemine devam etmek için \"true\", ana menüye geri dönmek için \"false\" yazınız -> ");
                 kontrol = scanner.nextBoolean();
             } else {
                 accounts.add(new Account());
