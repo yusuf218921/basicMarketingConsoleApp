@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class AdminMenu extends Main{
-    Scanner scanner = new Scanner(System.in);
-    public void adminMenu() {
+public class AdminMenu extends Main implements Menu {
+    @Override
+    public void menu() {
         secenek = -1;
         while (secenek != 0) {
             System.out.println("\n\n**********************ADMİN MENÜSÜ**********************\n\n");
@@ -16,29 +16,14 @@ public class AdminMenu extends Main{
             secenek = scanner.nextInt();
             switch (secenek) {
                 case 1:
-                    int kontrol = -1;
                     new AccountsList().list();
-                    System.out.print("Geri dönmek için 1'i ana menüye dönmek için 0'ı tuşlayınız -> ");
-                    while (kontrol != 0 && kontrol != 1) {
-                        kontrol = scanner.nextInt();
-                        if (kontrol == 1) {
-                            try {
-                                Thread.sleep(1000);
-                            } catch (InterruptedException e) {
-                                throw new RuntimeException(e);
-                            }
-                        } else if (kontrol == 0) {
-                            System.out.println("Ana menüye gönderiliyorsunuz lütfen bekleyiniz...");
-                            try {
-                                Thread.sleep(1000);
-                            } catch (InterruptedException e) {
-                                throw new RuntimeException(e);
-                            }
-                            new MainMenu().mainMenu();
-                        } else {
-                            System.out.print("Geçersiz sayı girdiniz lütfen tekrar giriniz -> ");
-                        }
+                    System.out.println("Devam etmek için herhangi bir tuşa basın...");
+                    try
+                    {
+                        System.in.read();
                     }
+                    catch(Exception e)
+                    {}
                     break;
                 case 2:
                     break;
@@ -53,7 +38,10 @@ public class AdminMenu extends Main{
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    new MainMenu().mainMenu();
+                    menus.add(new MainMenu());
+                    menus.get(menus.size() - 1).menu();
+                    secenek = 0;
+                    break;
                 default:
                     break;
             }

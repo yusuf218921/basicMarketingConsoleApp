@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class AccountLogin extends Main {
-    Scanner scanner = new Scanner(System.in);
     boolean kontrol = true;
 
     public void login() {

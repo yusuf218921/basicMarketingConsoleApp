@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class MainMenu extends Main {
-    Scanner scanner = new Scanner(System.in);
-
-
-    public void mainMenu() {
+public class MainMenu extends Main implements Menu {
+    @Override
+    public void menu() {
+        secenek=-1;
         while (secenek != 0) {
 
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
@@ -29,6 +28,9 @@ public class MainMenu extends Main {
                     System.out.println("\n\n\n\n\n*********************GİRİŞ EKRANI*********************\n\n");
 
                     new AccountLogin().login();
+                    menus.add(new CustomerMenu());
+                    menus.get(menus.size() - 1).menu();
+
                     break;
                 case 2:
                     System.out.println("Kayıt Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
@@ -39,10 +41,10 @@ public class MainMenu extends Main {
                     }
 
                     System.out.println("\n\n\n\n\n*********************KAYIT EKRANI*********************\n\n");
-                    System.out.println("Hesap oluşturmak için aşağıdaki bilgileri doldurunuz...");
+                    System.out.println("Hesap oluşturmak için aşağıdaki bilgileri doldurunuz...\n");
                     new AccountRegister().register();
 
-
+                    System.out.println("Ana menüye yönlendiriliyorsunuz...");
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
@@ -58,12 +60,12 @@ public class MainMenu extends Main {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-
-                    System.exit(0);
+                    secenek = 0;
                     break;
                 case 0:
                     new AdminLogin().adminLogin();
-                    adminLogin = true;
+                    menus.add(new AdminMenu());
+                    menus.get(menus.size() - 1).menu();
                     break;
                 default:
                     System.out.println("Hatalı numara girdiniz lütfen tekrar deneyiniz...");

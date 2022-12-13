@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
 public class AccountRegister extends Main {
-
-    Scanner scanner = new Scanner(System.in);
     boolean kontrol = true;
 
     public void register() {
         while (kontrol) {
             String username;
             String password;
+            String firstName, lastName, tel, email;
             System.out.print("Kullınıcı adı: ");
             username = scanner.next();
             System.out.print("Şifre: ");
@@ -21,9 +20,24 @@ public class AccountRegister extends Main {
                 accounts.get(kayitId).setUsername(username);
                 accounts.get(kayitId).setPassword(password);
                 accounts.get(kayitId).setId(kayitId);
-                kayitId++;
                 kontrol = false;
-                System.out.print("Tebrikler başarıyla hesap oluşturdunuz, ana menüye yönlendiriliyorsunuz...\n\n");
+                System.out.print("Tebrikler başarıyla hesap oluşturdunuz...\n\n");
+                customers.add(new Customer());
+                System.out.println("\nLütfen Kişisel Bilgilerinizi doğru bir şekilde giriniz...\n");
+                System.out.print("İsim: ");
+                firstName=scanner.next();
+                System.out.print("Soyisim: ");
+                lastName=scanner.next();
+                System.out.print("Telefon Numarası: ");
+                tel=scanner.next();
+                System.out.print("Email: ");
+                email=scanner.next();
+
+                customers.get(kayitId).setFirstName(firstName);
+                customers.get(kayitId).setLastName(lastName);
+                customers.get(kayitId).setTel(tel);
+                customers.get(kayitId).setEmail(email);
+                kayitId++;
             }
 
         }
