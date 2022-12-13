@@ -7,7 +7,6 @@ public class MainMenu{
 
     public void mainMenu() {
         while(secenek!=0){
-
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
             System.out.println("1-) Hesaba giriş yap");
             System.out.println("2-) Yeni Hesap Oluştur");

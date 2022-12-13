@@ -1,2 +1,3 @@
-public class Cart {
+public class Cart extends BaseProduct{
+
 }
