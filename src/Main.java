@@ -15,6 +15,13 @@ public class Main {
     public static void main(String[] args) {
         //menu = new MainMenu();
         //menu.menu();
+        BaseProduct newBaseProduct = new ElectronicProduct();
+        newBaseProduct.setProductId(0);
+        newBaseProduct.setCatagoryId(1);
+        newBaseProduct.productName = "Laptop";
+        newBaseProduct.productCompany = "Acer";
+        newBaseProduct.price = 2500;
+        cart.add(newBaseProduct);
         listCart listTheCart = new listCart();
         listTheCart.list();
     }

@@ -1,9 +1,8 @@
 public class listCart extends CartMenu{
     public void list(){
-        int i=0;
+        int i=1;
         for (BaseProduct baseProduct:cart){
-            System.out.println(i);
-            System.out.println(baseProduct);
+            System.out.println(i+". Urun - "+baseProduct.productCompany+" - "+baseProduct.productName+" - "+baseProduct.price);
         }
     }
 }

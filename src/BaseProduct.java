@@ -1,8 +1,10 @@
 public abstract class BaseProduct {
-    int productId;
-    int catagoryId;
-    String productCompany;
-    String productName;
+    private int productId;
+    private int catagoryId;
+    public String productCompany;
+    public String productName;
+
+    public int price;
 
     //Setter Functions
     public void setProductId(int productId) {
@@ -11,14 +13,6 @@ public abstract class BaseProduct {
 
     public void setCatagoryId(int catagoryId) {
         this.catagoryId = catagoryId;
-    }
-
-    public void setProductCompany(String productCompany) {
-        this.productCompany = productCompany;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
     }
 
     //Getter Functions
@@ -30,11 +24,4 @@ public abstract class BaseProduct {
         return catagoryId;
     }
 
-    public String getProductCompany() {
-        return productCompany;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
 }
