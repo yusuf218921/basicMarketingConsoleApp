@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="hesap görüntüle,güncelle,bakiye yükle tamamlandı">
+    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="sepet listeleme denemesi">
+      <change afterPath="$PROJECT_DIR$/src/CartMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_15_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_23_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,6 +297,11 @@
             <State />
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_GENERIC_TABS">
@@ -313,7 +322,8 @@
     <MESSAGE value="eski menu" />
     <MESSAGE value="Customer menu yapılma aşamasında" />
     <MESSAGE value="hesap görüntüle,güncelle,bakiye yükle tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="hesap görüntüle,güncelle,bakiye yükle tamamlandı" />
+    <MESSAGE value="sepet listeleme denemesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="sepet listeleme denemesi" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

@@ -10,9 +10,12 @@ public class Main {
     static Menu menu;
     static ArrayList<Customer> customers = new ArrayList<>();
 
+    static ArrayList<BaseProduct> cart = new ArrayList<>();
 
     public static void main(String[] args) {
-        menu = new MainMenu();
-        menu.menu();
+        //menu = new MainMenu();
+        //menu.menu();
+        listCart listTheCart = new listCart();
+        listTheCart.list();
     }
 }
