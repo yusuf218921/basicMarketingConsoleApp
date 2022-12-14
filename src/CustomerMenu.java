@@ -2,9 +2,8 @@ public class CustomerMenu extends Main implements Menu {
 
     @Override
     public void menu() {
-        secenek = -1;
-        while (secenek != 0) {
-            System.out.println("\n\nHOŞGELDİNİZ SAYIN " + customers.get(girisId).getFirstName() + " " + customers.get(girisId).getLastName());
+        while (loop) {
+            System.out.println("\n\nHOŞGELDİNİZ SAYIN " + customers.get(loginId).getFirstName() + " " + customers.get(loginId).getLastName());
             System.out.println("\n\n1-) Hesap Bilgilerini Görüntüle");
             System.out.println("2-) Hesap Bilgilerini Güncelle");
             System.out.println("3-) Hesaba Bakiye Yükle");
@@ -14,16 +13,16 @@ public class CustomerMenu extends Main implements Menu {
             System.out.println("7-) Uygulamadan Çıkış yap");
 
             System.out.print("\n\n\nLütfen yapmak istediğiniz işlemi seçiniz -> ");
-            secenek = scanner.nextInt();
+            selection = scanner.nextInt();
 
-            switch (secenek) {
+            switch (selection) {
                 case 1 -> {
                     System.out.println("\n\n\n\n*****************Hesap Bilgilerim*****************\n\n");
-                    System.out.println("İsim: " + customers.get(girisId).getFirstName());
-                    System.out.println("Soyisim: " + customers.get(girisId).getLastName());
-                    System.out.println("Telefon: " + customers.get(girisId).getTel());
-                    System.out.println("Email: " + customers.get(girisId).getEmail());
-                    System.out.println("Bakiye: " + customers.get(girisId).getBalance());
+                    System.out.println("İsim: " + customers.get(loginId).getFirstName());
+                    System.out.println("Soyisim: " + customers.get(loginId).getLastName());
+                    System.out.println("Telefon: " + customers.get(loginId).getTel());
+                    System.out.println("Email: " + customers.get(loginId).getEmail());
+                    System.out.println("Bakiye: " + customers.get(loginId).getBalance());
                     System.out.print("Devam etmek için herhangi bir tuşa basın...");
                     try {
                         System.in.read();
@@ -66,7 +65,7 @@ public class CustomerMenu extends Main implements Menu {
                     expirationDate=scanner.next();
                     System.out.print("Yükleme yapılacak tutar: ");
                     topUp = scanner.nextInt();
-                    customers.get(girisId).loadBalance(topUp);
+                    customers.get(loginId).loadBalance(topUp);
                     System.out.println("Yükleme Başarıyla gerçekleşti...");
                     System.out.print("Devam etmek için herhangi bir tuşa basınız...");
                     try {
@@ -76,7 +75,7 @@ public class CustomerMenu extends Main implements Menu {
                 }
                 case 6 -> {
                     System.out.println("Ana menüye geri gönderiliyorsunuz lütfen bekleyiniz...");
-                    secenek=0;
+                    loop=false;
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {

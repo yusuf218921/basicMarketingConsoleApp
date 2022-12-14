@@ -1,9 +1,9 @@
 
 public class AccountRegister extends Main {
-    boolean kontrol = true;
+    boolean check = true;
 
     public void register() {
-        while (kontrol) {
+        while (check) {
             String username;
             String password;
             String firstName, lastName, tel, email;
@@ -13,13 +13,13 @@ public class AccountRegister extends Main {
             password = scanner.next();
             if (new AccountQuery(username).registerQuery(accounts)) {
                 System.out.print("\n\nGirmiş olduğunuz kullanıcı adı daha önce alınmıştır, kayıt işlemine devam etmek için \"true\", ana menüye geri dönmek için \"false\" yazınız -> ");
-                kontrol = scanner.nextBoolean();
+                check = scanner.nextBoolean();
             } else {
                 accounts.add(new Account());
-                accounts.get(kayitId).setUsername(username);
-                accounts.get(kayitId).setPassword(password);
-                accounts.get(kayitId).setId(kayitId);
-                kontrol = false;
+                accounts.get(regiserId).setUsername(username);
+                accounts.get(regiserId).setPassword(password);
+                accounts.get(regiserId).setId(regiserId);
+                check = false;
                 System.out.print("Tebrikler başarıyla hesap oluşturdunuz...\n\n");
                 customers.add(new Customer());
                 System.out.println("\nLütfen Kişisel Bilgilerinizi doğru bir şekilde giriniz...\n");
@@ -32,11 +32,11 @@ public class AccountRegister extends Main {
                 System.out.print("Email: ");
                 email=scanner.next();
 
-                customers.get(kayitId).setFirstName(firstName);
-                customers.get(kayitId).setLastName(lastName);
-                customers.get(kayitId).setTel(tel);
-                customers.get(kayitId).setEmail(email);
-                kayitId++;
+                customers.get(regiserId).setFirstName(firstName);
+                customers.get(regiserId).setLastName(lastName);
+                customers.get(regiserId).setTel(tel);
+                customers.get(regiserId).setEmail(email);
+                regiserId++;
             }
 
         }

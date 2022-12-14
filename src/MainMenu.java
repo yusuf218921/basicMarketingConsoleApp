@@ -1,10 +1,7 @@
-import java.util.Scanner;
-
 public class MainMenu extends Main implements Menu {
     @Override
     public void menu() {
-        secenek = -1;
-        while (secenek != 0) {
+        while (loop) {
 
             System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
             System.out.println("1-) Hesaba giriş yap");
@@ -13,9 +10,9 @@ public class MainMenu extends Main implements Menu {
 
             System.out.print("\n\n\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
 
-            secenek = scanner.nextInt();
+            selection = scanner.nextInt();
 
-            switch (secenek) {
+            switch (selection) {
                 case 1 -> {
                     System.out.println("Giriş Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
                     try {
@@ -25,9 +22,13 @@ public class MainMenu extends Main implements Menu {
                     }
                     System.out.println("\n\n\n\n\n*********************GİRİŞ EKRANI*********************\n\n");
                     new AccountLogin().login();
-                    menu = new CustomerMenu();
-                    menu.menu();
-                    secenek=-1;
+                    if (customerLogin) {
+                        loop = false;
+                        System.out.println("Giriş yapıldı " + customerLogin);
+                    } else {
+                        loop = true;
+                    }
+                    System.out.println(loop);
                 }
                 case 2 -> {
                     System.out.println("Kayıt Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");
@@ -53,12 +54,14 @@ public class MainMenu extends Main implements Menu {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    secenek = 0;
+                    loop = false;
                 }
                 case 0 -> {
                     new AdminLogin().adminLogin();
-                    menu = new AdminMenu();
-                    menu.menu();
+                    if (adminLogin) {
+                        loop = false;
+                        System.out.println("Admin girişi " + adminLogin);
+                    }
                 }
                 default -> System.out.println("Hatalı numara girdiniz lütfen tekrar deneyiniz...");
             }

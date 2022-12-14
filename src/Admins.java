@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class Admins {
+public class Admins extends Main{
     static ArrayList<Administrator> admins = new ArrayList<>();
 
-    static int adminGirisId;
+    //static int adminGirisId;
 
-    public static void admins() {
+    public void admins() {
         admins.add(new Administrator());
         admins.get(0).setAdminUsername("yusuf");
         admins.get(0).setAdminPassword("yusuf1");

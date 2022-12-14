@@ -1,8 +1,7 @@
 public class AdminMenu extends Main implements Menu {
     @Override
     public void menu() {
-        secenek = -1;
-        while (secenek != 0) {
+        while (loop) {
             System.out.println("\n\n**********************ADMİN MENÜSÜ**********************\n\n");
             System.out.println("1-) Kayıtlı Hesapları görüntüle");
             System.out.println("2-) Kayıtlı Ürünleri görüntüle");
@@ -11,8 +10,8 @@ public class AdminMenu extends Main implements Menu {
             System.out.println(("5-) Ana menüye geri dön"));
 
             System.out.print("\n\nLütfen yapmak istediğiniz işlemi seçiniz -> ");
-            secenek = scanner.nextInt();
-            switch (secenek) {
+            selection = scanner.nextInt();
+            switch (selection) {
                 case 1:
                     new AccountsList().list();
                     System.out.println("Devam etmek için herhangi bir tuşa basın...");
@@ -34,9 +33,7 @@ public class AdminMenu extends Main implements Menu {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    menu = new MainMenu();
-                    menu.menu();
-                    secenek = 0;
+                    loop=false;
                     break;
                 default:
                     break;

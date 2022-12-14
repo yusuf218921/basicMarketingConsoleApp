@@ -1,8 +1,8 @@
 public class AccountLogin extends Main {
-    boolean kontrol = true;
+    boolean check = true;
 
     public void login() {
-        while (kontrol) {
+        while (check) {
             String username;
             String password;
 
@@ -12,10 +12,11 @@ public class AccountLogin extends Main {
             password = scanner.next();
 
             if (new AccountQuery(username, password).loginQuery(accounts)) {
-                girisId = new AccountQuery(username, password).loginId(accounts);
-                kontrol = false;
+                loginId = new AccountQuery(username, password).loginId(accounts);
+                check = false;
                 System.out.println("Başarıyla giriş yaptınız ,sisteme yönlendiriliyorsunuz lütfen bekleyiniz...");
-                secenek = 0;
+                customerLogin=true;
+                loop=false;
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -23,7 +24,7 @@ public class AccountLogin extends Main {
                 }
             } else {
                 System.out.print("Yanlış kullanııcı veya şifre girdiniz ,giriş işlemine devam etmek için \"true\", ana menüye geri dönmek için \"false\" yazınız ->");
-                kontrol = scanner.nextBoolean();
+                check = scanner.nextBoolean();
             }
         }
 

@@ -1,7 +1,6 @@
 public class CartMenu extends Main{
     public void cartMenu(){
 
-        boolean loop = true;
         while (loop){
             System.out.println("Sepet:");
             System.out.println("Bir işlem seçin");
