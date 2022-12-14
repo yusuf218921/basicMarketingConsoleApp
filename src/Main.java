@@ -1,21 +1,11 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
-    static boolean customerLogin=false;
-    static boolean adminLogin=false;
-    static int selection;
-    static boolean loop=true;
-    static int regiserId = 0;
-    static int loginId;
-    static Scanner scanner = new Scanner(System.in);
-    static ArrayList<Account> accounts = new ArrayList<>();
-    static Menu menu;
-    static ArrayList<Customer> customers = new ArrayList<>();
+public class Main extends Statics{
 
-    static ArrayList<BaseProduct> cart = new ArrayList<>();
 
     public static void main(String[] args) {
+        /*
         new Admins().admins();
         while (loop){
             menu = new MainMenu();
@@ -35,7 +25,14 @@ public class Main {
                 loop=true;
             }
         }
-
-
+        */
+        BaseProduct hacerPc = new ElectronicProduct();
+        hacerPc.price=2500;
+        hacerPc.productName= "Laptop";
+        hacerPc.productCompany= "Hacer";
+        cart.add(hacerPc);
+        cart.add(new ElectronicProduct(2500,"Gl","Mouse"));
+        CartMenu cartMenu = new CartMenu();
+        cartMenu.menu();
     }
 }

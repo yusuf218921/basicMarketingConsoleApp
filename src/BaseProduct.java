@@ -5,6 +5,12 @@ public abstract class BaseProduct {
     public String productName;
 
     public int price;
+                            //Constructor Blocks
+    BaseProduct(){
+        productId = Statics.productId;
+        Statics.productId++;
+        catagoryId=0;
+    }
 
     //Setter Functions
     public void setProductId(int productId) {
