@@ -29,8 +29,23 @@ public class AdminMenu extends Statics implements Menu {
                     }
                     break;
                 case 3:
+                    new ProductManager().addProduct();
+                    System.out.println("Ürün başarıyla eklendi.");
+                    System.out.println("Devam etmek için herhangi bir tuşa basın...");
+                    try {
+                        System.in.read();
+                    } catch (Exception e) {
+                    }
                     break;
                 case 4:
+                    new ProductManager().removeProduct();
+                    System.out.println("Ürün başarıyla kaldırıldı.");
+                    System.out.println("Devam etmek için herhangi bir tuşa basın...");
+                    try {
+                        System.in.read();
+                    } catch (Exception e) {
+                    }
+
                     break;
                 case 5:
                     System.out.println("Ana menüye gönderiliyorsunuz lütfen bekleyiniz...");

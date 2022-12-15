@@ -30,6 +30,10 @@ public class ProductManager extends AdminMenu {
     }
 
     public void removeProduct() {
+        int id;
+        System.out.print("Kaldıracağınız ürünün idsini giriniz : ");
+        id = scanner.nextInt();
+        products.remove(id-1);
 
     }
 
