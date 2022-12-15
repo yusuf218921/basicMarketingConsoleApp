@@ -4,7 +4,6 @@ public class AdminLogin extends Statics {
     Scanner scanner = new Scanner(System.in);
 
     public void adminLogin() {
-        //admins();
         for (int i = 0; i < 3; i++) {
             String adminUsername;
             String adminPassword;

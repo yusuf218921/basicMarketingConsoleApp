@@ -12,23 +12,23 @@ public class AdminMenu extends Statics implements Menu {
             System.out.print("\n\nLütfen yapmak istediğiniz işlemi seçiniz -> ");
             selection = scanner.nextInt();
             switch (selection) {
-                case 1:
+                case 1 -> {
                     new AccountsList().list();
                     System.out.println("Devam etmek için herhangi bir tuşa basın...");
                     try {
                         System.in.read();
                     } catch (Exception e) {
                     }
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     new ProductManager().list();
                     System.out.println("Devam etmek için herhangi bir tuşa basın...");
                     try {
                         System.in.read();
                     } catch (Exception e) {
                     }
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     new ProductManager().addProduct();
                     System.out.println("Ürün başarıyla eklendi.");
                     System.out.println("Devam etmek için herhangi bir tuşa basın...");
@@ -36,8 +36,8 @@ public class AdminMenu extends Statics implements Menu {
                         System.in.read();
                     } catch (Exception e) {
                     }
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     new ProductManager().removeProduct();
                     System.out.println("Ürün başarıyla kaldırıldı.");
                     System.out.println("Devam etmek için herhangi bir tuşa basın...");
@@ -45,9 +45,8 @@ public class AdminMenu extends Statics implements Menu {
                         System.in.read();
                     } catch (Exception e) {
                     }
-
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("Ana menüye gönderiliyorsunuz lütfen bekleyiniz...");
                     try {
                         Thread.sleep(1000);
@@ -55,9 +54,9 @@ public class AdminMenu extends Statics implements Menu {
                         throw new RuntimeException(e);
                     }
                     loop = false;
-                    break;
-                default:
-                    break;
+                }
+                default -> {
+                }
             }
         }
     }

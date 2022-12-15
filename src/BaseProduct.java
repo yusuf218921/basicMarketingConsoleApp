@@ -5,11 +5,12 @@ public abstract class BaseProduct {
     public String productName;
 
     public double price;
-                            //Constructor Blocks
-    BaseProduct(){
+
+    //Constructor Blocks
+    BaseProduct() {
         Statics.productId++;
         productId = Statics.productId;
-        catagoryId=0;
+        catagoryId = 0;
     }
 
     //Setter Functions

@@ -1,4 +1,4 @@
-public class HouseholdAppliancesProduct extends BaseProduct{
+public class HouseholdAppliancesProduct extends BaseProduct {
     HouseholdAppliancesProduct() {
         setCatagoryId(3);
     }

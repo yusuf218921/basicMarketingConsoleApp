@@ -1,25 +1,24 @@
-public class Main extends Statics{
+public class Main extends Statics {
 
 
     public static void main(String[] args) {
         new Admins().admins();
         new Products().products();
-        while (loop){
+        while (loop) {
             menu = new MainMenu();
             menu.menu();
-            if(customerLogin){
-                loop=true;
-                menu=new CustomerMenu();
+            if (customerLogin) {
+                loop = true;
+                menu = new CustomerMenu();
                 menu.menu();
-                customerLogin=false;
-                loop=true;
-            }
-            else if (adminLogin){
-                loop=true;
-                menu=new AdminMenu();
+                customerLogin = false;
+                loop = true;
+            } else if (adminLogin) {
+                loop = true;
+                menu = new AdminMenu();
                 menu.menu();
-                adminLogin=false;
-                loop=true;
+                adminLogin = false;
+                loop = true;
             }
         }
 

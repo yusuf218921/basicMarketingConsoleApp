@@ -1,14 +1,16 @@
 public class ElectronicProduct extends BaseProduct {
-    ElectronicProduct(){
+    ElectronicProduct() {
         setCatagoryId(1);
     }
-    ElectronicProduct(double price,String productCompany,String productName){
+
+    ElectronicProduct(double price, String productCompany, String productName) {
         setCatagoryId(1);
-        this.price=price;
-        this.productCompany=productCompany;
-        this.productName=productName;
+        this.price = price;
+        this.productCompany = productCompany;
+        this.productName = productName;
     }
-    public void sa(){
+
+    public void sa() {
 
     }
 }

@@ -1,3 +1,3 @@
-public class CartAdd extends Statics{
+public class CartAdd extends Statics {
 
 }
