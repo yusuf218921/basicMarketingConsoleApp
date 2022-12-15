@@ -18,13 +18,4 @@ public class AdminQuery {
         }
         return false;
     }
-
-    public int adminLoginId(ArrayList<Administrator> admins) {
-        for (Administrator admin : admins) {
-            if (admin.getAdminUsername().equals(adminUsername) && admin.getAdminPassword().equals(adminPassword)) {
-                return admin.getAdminId();
-            }
-        }
-        return 0;
-    }
 }
