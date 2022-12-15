@@ -2,7 +2,6 @@ public class Main extends Statics{
 
 
     public static void main(String[] args) {
-        /*
         new Admins().admins();
         while (loop){
             menu = new MainMenu();
@@ -22,12 +21,5 @@ public class Main extends Statics{
                 loop=true;
             }
         }
-        */
-
-        cart.add(new ElectronicProduct(2500,"Hacer","Laptop"));
-        cart.add(new ElectronicProduct(350,"Gl","Mouse"));
-        cart.add(new ClothesProduct(200,"Lc vaykiki","T-shirt"));
-        CartMenu cartMenu = new CartMenu();
-        cartMenu.menu();
     }
 }

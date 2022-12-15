@@ -1,4 +1,4 @@
-public class CartMenu extends Main{
+public class CartMenu extends Statics{
     public void menu(){
         System.out.println("\n\nSepetinize Hoş Geldiniz...");
         while (loop){

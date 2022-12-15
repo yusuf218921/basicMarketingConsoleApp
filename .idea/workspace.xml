@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="Sepet, ekleme dışında halloldu">
-      <change beforePath="$PROJECT_DIR$/src/ListCart.java" beforeDir="false" />
+    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="sepet">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HouseholdAppliancesProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CartAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClothesProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FurnitureProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,13 +52,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nemarin/Desktop/Project/javademos/OvamMarketUygulamasi&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Nemarin/Desktop/Project/javademos/OvamMarketUygulamasi"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -261,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671053254167</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="sepet">
+      <created>1671100351156</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1671100351156</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -335,7 +360,8 @@
     <MESSAGE value="hesap görüntüle,güncelle,bakiye yükle tamamlandı" />
     <MESSAGE value="sepet listeleme denemesi" />
     <MESSAGE value="Sepet, ekleme dışında halloldu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sepet, ekleme dışında halloldu" />
+    <MESSAGE value="sepet" />
+    <option name="LAST_COMMIT_MESSAGE" value="sepet" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-public class CustomerConfig extends Main {
+public class CustomerConfig extends Statics {
 
     public void configFirstName() {
         String firstName;

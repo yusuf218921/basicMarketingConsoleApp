@@ -1,4 +1,4 @@
-public class AccountLogin extends Main {
+public class AccountLogin extends Statics {
     boolean check = true;
 
     public void login() {

@@ -8,4 +8,7 @@ public class ElectronicProduct extends BaseProduct {
         this.productCompany=productCompany;
         this.productName=productName;
     }
+    public void sa(){
+
+    }
 }

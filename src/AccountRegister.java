@@ -1,5 +1,4 @@
-
-public class AccountRegister extends Main {
+public class AccountRegister extends Statics {
     boolean check = true;
 
     public void register() {

@@ -1,4 +1,4 @@
-public class MainMenu extends Main implements Menu {
+public class MainMenu extends Statics implements Menu {
     @Override
     public void menu() {
         while (loop) {

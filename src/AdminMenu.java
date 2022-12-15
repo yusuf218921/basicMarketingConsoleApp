@@ -1,4 +1,4 @@
-public class AdminMenu extends Main implements Menu {
+public class AdminMenu extends Statics implements Menu {
     @Override
     public void menu() {
         while (loop) {

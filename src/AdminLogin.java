@@ -13,7 +13,6 @@ public class AdminLogin extends Admins {
             adminPassword = scanner.next();
 
             if (new AdminQuery(adminUsername, adminPassword).loginQuery(admins)) {
-                //adminGirisId = new AdminQuery(adminUsername, adminPassword).adminLoginId(admins);
                 System.out.println("Admin girişi tespit edildi lütfen bekleyiniz...");
                 adminLogin = true;
                 loop = false;

@@ -14,6 +14,7 @@ public class Statics {
     static Menu menu;
     static ArrayList<Customer> customers = new ArrayList<>();
     static ArrayList<BaseProduct> cart = new ArrayList<>();
-
+    static ArrayList<Administrator> admins = new ArrayList<>();
+    static ArrayList <BaseProduct> products = new ArrayList<>();
 
 }

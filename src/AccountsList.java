@@ -1,4 +1,4 @@
-public class AccountsList extends Main {
+public class AccountsList extends Statics {
     public void list() {
         for (Account account : accounts) {
             System.out.println("\n\nId: " + account.getId());

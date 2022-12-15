@@ -1,4 +1,4 @@
-public class CustomerMenu extends Main implements Menu {
+public class CustomerMenu extends Statics implements Menu {
 
     @Override
     public void menu() {

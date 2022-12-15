@@ -1,2 +1,3 @@
-public class CartAdd extends Main{
+public class CartAdd extends Statics{
+
 }
