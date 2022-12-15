@@ -3,7 +3,7 @@ public class FurnitureProduct extends BaseProduct {
         setCatagoryId(2);
     }
 
-    FurnitureProduct(int price, String productCompany, String productName) {
+    FurnitureProduct(double price, String productCompany, String productName) {
         setCatagoryId(2);
         this.price = price;
         this.productCompany = productCompany;

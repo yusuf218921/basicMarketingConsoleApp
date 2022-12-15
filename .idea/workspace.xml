@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="products eklenme aşaması">
-      <change beforePath="$PROJECT_DIR$/src/AdminQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectronicProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FurnitureProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FurnitureProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HouseholdAppliancesProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HouseholdAppliancesProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671102432863</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="products eklenme aşaması">
+      <created>1671102997039</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1671102997039</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

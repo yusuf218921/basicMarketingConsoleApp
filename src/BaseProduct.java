@@ -4,11 +4,11 @@ public abstract class BaseProduct {
     public String productCompany;
     public String productName;
 
-    public int price;
+    public double price;
                             //Constructor Blocks
     BaseProduct(){
-        productId = Statics.productId;
         Statics.productId++;
+        productId = Statics.productId;
         catagoryId=0;
     }
 
