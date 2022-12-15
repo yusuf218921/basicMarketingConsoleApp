@@ -33,7 +33,7 @@ public class AdminMenu extends Main implements Menu {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    loop=false;
+                    loop = false;
                     break;
                 default:
                     break;

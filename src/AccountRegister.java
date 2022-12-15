@@ -24,13 +24,13 @@ public class AccountRegister extends Main {
                 customers.add(new Customer());
                 System.out.println("\nLütfen Kişisel Bilgilerinizi doğru bir şekilde giriniz...\n");
                 System.out.print("İsim: ");
-                firstName=scanner.next();
+                firstName = scanner.next();
                 System.out.print("Soyisim: ");
-                lastName=scanner.next();
+                lastName = scanner.next();
                 System.out.print("Telefon Numarası: ");
-                tel=scanner.next();
+                tel = scanner.next();
                 System.out.print("Email: ");
-                email=scanner.next();
+                email = scanner.next();
 
                 customers.get(regiserId).setFirstName(firstName);
                 customers.get(regiserId).setLastName(lastName);

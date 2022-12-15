@@ -55,14 +55,14 @@ public class CustomerMenu extends Main implements Menu {
                 }
                 case 3 -> {
                     int topUp;
-                    String no,cvv,expirationDate;
+                    String no, cvv, expirationDate;
                     System.out.println("\n\nYükleme yapılacak kartın bilgilerini giriniz...");
                     System.out.print("Kart Numarası: ");
-                    no=scanner.next();
+                    no = scanner.next();
                     System.out.print("Kart CVV: ");
-                    cvv=scanner.next();
+                    cvv = scanner.next();
                     System.out.print("Kart Son Kullanma Tarihi: ");
-                    expirationDate=scanner.next();
+                    expirationDate = scanner.next();
                     System.out.print("Yükleme yapılacak tutar: ");
                     topUp = scanner.nextInt();
                     customers.get(loginId).loadBalance(topUp);
@@ -75,7 +75,7 @@ public class CustomerMenu extends Main implements Menu {
                 }
                 case 6 -> {
                     System.out.println("Ana menüye geri gönderiliyorsunuz lütfen bekleyiniz...");
-                    loop=false;
+                    loop = false;
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {

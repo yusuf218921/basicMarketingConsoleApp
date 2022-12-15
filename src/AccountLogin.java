@@ -15,8 +15,8 @@ public class AccountLogin extends Main {
                 loginId = new AccountQuery(username, password).loginId(accounts);
                 check = false;
                 System.out.println("Başarıyla giriş yaptınız ,sisteme yönlendiriliyorsunuz lütfen bekleyiniz...");
-                customerLogin=true;
-                loop=false;
+                customerLogin = true;
+                loop = false;
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {

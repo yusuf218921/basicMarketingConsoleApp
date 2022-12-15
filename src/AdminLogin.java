@@ -16,7 +16,7 @@ public class AdminLogin extends Admins {
                 //adminGirisId = new AdminQuery(adminUsername, adminPassword).adminLoginId(admins);
                 System.out.println("Admin girişi tespit edildi lütfen bekleyiniz...");
                 adminLogin = true;
-                loop=false;
+                loop = false;
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Admins extends Main{
+public class Admins extends Main {
     static ArrayList<Administrator> admins = new ArrayList<>();
 
     //static int adminGirisId;
