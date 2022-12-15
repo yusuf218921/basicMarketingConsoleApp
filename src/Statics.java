@@ -15,4 +15,5 @@ public class Statics {
     static ArrayList<Customer> customers = new ArrayList<>();
     static ArrayList<BaseProduct> cart = new ArrayList<>();
 
+
 }
