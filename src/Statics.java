@@ -18,3 +18,4 @@ public class Statics {
     static ArrayList <BaseProduct> products = new ArrayList<>();
 
 }
+

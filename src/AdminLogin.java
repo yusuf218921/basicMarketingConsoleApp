@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AdminLogin extends Admins {
+public class AdminLogin extends Statics {
     Scanner scanner = new Scanner(System.in);
 
     public void adminLogin() {

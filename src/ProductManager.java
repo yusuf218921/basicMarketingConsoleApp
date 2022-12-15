@@ -25,6 +25,14 @@ public class ProductManager extends AdminMenu {
     }
 
     public void list() {
+        for (BaseProduct product : products){
+            System.out.println("\n\nKategori Id : " + product.getCatagoryId());
+            System.out.println("Ürün Id : " + product.getProductId());
+            System.out.println("Ürün adı : " + product.productName);
+            System.out.println("Ürün Fiyatı : " + product.price);
+
+
+        }
 
     }
 }

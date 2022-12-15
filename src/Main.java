@@ -2,7 +2,8 @@ public class Main extends Statics{
 
 
     public static void main(String[] args) {
-        /*new Admins().admins();
+        new Admins().admins();
+        new Products().products();
         while (loop){
             menu = new MainMenu();
             menu.menu();
@@ -20,9 +21,7 @@ public class Main extends Statics{
                 adminLogin=false;
                 loop=true;
             }
-        }*/
-        new Products().products();
-        System.out.println(products.get(0).getProductId());
-        System.out.println(products.get(0).getCatagoryId());
+        }
+
     }
 }
