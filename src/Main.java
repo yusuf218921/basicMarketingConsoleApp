@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class Main extends Statics{
 
@@ -26,12 +25,10 @@ public class Main extends Statics{
             }
         }
         */
-        BaseProduct hacerPc = new ElectronicProduct();
-        hacerPc.price=2500;
-        hacerPc.productName= "Laptop";
-        hacerPc.productCompany= "Hacer";
-        cart.add(hacerPc);
-        cart.add(new ElectronicProduct(2500,"Gl","Mouse"));
+
+        cart.add(new ElectronicProduct(2500,"Hacer","Laptop"));
+        cart.add(new ElectronicProduct(350,"Gl","Mouse"));
+        cart.add(new ClothesProduct(200,"Lc vaykiki","T-shirt"));
         CartMenu cartMenu = new CartMenu();
         cartMenu.menu();
     }

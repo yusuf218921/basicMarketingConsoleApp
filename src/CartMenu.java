@@ -2,7 +2,7 @@ public class CartMenu extends Main{
     public void menu(){
         System.out.println("\n\nSepetinize Hoş Geldiniz...");
         while (loop){
-            ListCart listTheCart = new ListCart();
+            CartList listTheCart = new CartList();
             System.out.println("\n1- Sepeti Listele");
             System.out.println("2- Ürün Kaldır");
             System.out.println("0- Çıkış Yap");
@@ -10,6 +10,7 @@ public class CartMenu extends Main{
             switch (scanner.nextInt()){
                 case 1:
                     listTheCart.list();
+                    System.out.println("Toplam : "+listTheCart.sum());
                     break;
                 case 2:
                     boolean loop2 = true;

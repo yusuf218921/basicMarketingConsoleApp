@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="Sepet, ekleme dışında halloldu">
-      <change afterPath="$PROJECT_DIR$/src/CartAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_15_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_23_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CartList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClothesProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClothesProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ElectronicProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectronicProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListCart.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listCart.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670987219672</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Sepet, ekleme dışında halloldu">
+      <created>1671053254167</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1671053254167</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
