@@ -1,6 +1,7 @@
 public abstract class BaseProduct {
     private int productId;
-    private int catagoryId;
+    private int categoryId;
+    public String category;
     public String productCompany;
     public String productName;
 
@@ -10,7 +11,7 @@ public abstract class BaseProduct {
     BaseProduct() {
         Statics.productId++;
         productId = Statics.productId;
-        catagoryId = 0;
+        categoryId=0;
     }
 
     //Setter Functions
@@ -18,8 +19,8 @@ public abstract class BaseProduct {
         this.productId = productId;
     }
 
-    public void setCatagoryId(int catagoryId) {
-        this.catagoryId = catagoryId;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     //Getter Functions
@@ -27,8 +28,8 @@ public abstract class BaseProduct {
         return productId;
     }
 
-    public int getCatagoryId() {
-        return catagoryId;
+    public int getCategoryId() {
+        return categoryId;
     }
 
 }
