@@ -1,50 +1,54 @@
-public class ProductManager extends AdminMenu {
+public class ProductManager extends Main {
     public void addProduct() {
-        boolean loop = true;
-        while (loop) {
-            int categoryId;
-            double price;
-            String companyName;
-            String productName;
-            System.out.println("Sırasıyla eklenecek ürünün Kategori id'sini, ücretini, markasını ve ürün adını giriniz ->");
-            categoryId = scanner.nextInt();
-            price = scanner.nextInt();
-            companyName = scanner.next();
-            productName = scanner.next();
-            if (categoryId == 1) {
-                products.add(new ElectronicProduct(price, companyName, productName));
-                loop = false;
-            } else if (categoryId == 2) {
-                products.add(new FurnitureProduct(price, companyName, productName));
-                loop = false;
-            } else if (categoryId == 3) {
-                products.add(new HouseholdAppliancesProduct(price, companyName, productName));
-                loop = false;
-            } else {
-                System.out.println("Yanlış kategori id'si girildi lütfen tekrar deneyiniz");
+        boolean productManagerAddLoop = true;
+        while (productManagerAddLoop) {
+
+            System.out.print("\nLütfen ürünün katagorisini giriniz ->");
+            String category = scanner.nextLine();
+
+            boolean categoryTrue=false;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 2; j++) {
+                    if(categoryTrue) break;
+                    else if(category.toLowerCase().equals(Statics.categories[i][j].toLowerCase())){
+                        categoryTrue = true;
+                        break;
+                    }
+                }
+            }
+            if(categoryTrue=false){
+                System.out.println("Yanlış bir katagori girdiniz. Lütfen Aşağıdaki katagorilerden birisini yazın");
+            }
+            else{
+                System.out.print("\nLütfen ürünün ücretini giriniz ->");
+                double price = scanner.nextInt();
+                System.out.print("\nLütfen ürünün şirketini giriniz ->");
+                String companyName = scanner.next();
+                System.out.print("\nLütfen ürünün adını giriniz ->");
+                String productName = scanner.next();
+                productsOnTheMarket.add(new Product(price,category, companyName, productName));
+                productManagerAddLoop=false;
             }
 
-
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 2; j++) {
+                    System.out.print(Statics.categories[i][j]);
+                }
+                System.out.println();
+            }
         }
-
     }
-
     public void removeProduct() {
-        int id;
         System.out.print("Kaldıracağınız ürünün idsini giriniz : ");
-        id = scanner.nextInt();
-        products.remove(id - 1);
-
+        productsOnTheMarket.remove(scanner.nextInt() - 1);
     }
 
     public void list() {
-        for (BaseProduct product : products) {
-            System.out.println("\n\nKategori Id : " + product.getCatagoryId());
-            System.out.println("Ürün Id : " + product.getProductId());
-            System.out.println("Ürün Adı : " + product.productName);
-            System.out.println("Ürün Fiyatı : " + product.price);
-
-
+        for (BaseProduct productToList : productsOnTheMarket) {
+            System.out.println("\n\nÜrün Id : " + productToList.getProductId());
+            System.out.println("Kategori : " + productToList.category);
+            System.out.println("Ürün Adı : " + productToList.productName);
+            System.out.println("Ürün Fiyatı : " + productToList.price);
         }
 
     }

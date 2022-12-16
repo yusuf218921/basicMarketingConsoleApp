@@ -3,7 +3,7 @@ public class MainMenu extends Statics implements Menu {
     public void menu() {
         while (loop) {
 
-            System.out.println("*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n\n\n\n");
+            System.out.println("\n\n\n*********************OVAM MARKET UYGULAMASINA HOŞ GELDİNİZ*********************\n\n\n");
             System.out.println("1-) Hesaba giriş yap");
             System.out.println("2-) Yeni Hesap Oluştur");
             System.out.println("3-) Uygulamadan çıkış yap");

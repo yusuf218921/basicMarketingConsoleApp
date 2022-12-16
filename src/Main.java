@@ -4,6 +4,7 @@ public class Main extends Statics {
     public static void main(String[] args) {
         new Admins().admins();
         new Products().products();
+        //loop=false;                         //-----------------------Eğer Commentary Değilse Main Menu Çalışmaz-------------
         while (loop) {
             menu = new MainMenu();
             menu.menu();
@@ -21,6 +22,5 @@ public class Main extends Statics {
                 loop = true;
             }
         }
-
     }
 }
