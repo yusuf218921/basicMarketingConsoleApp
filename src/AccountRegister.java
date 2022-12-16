@@ -18,6 +18,7 @@ public class AccountRegister extends Statics {
                 accounts.get(regiserId).setUsername(username);
                 accounts.get(regiserId).setPassword(password);
                 accounts.get(regiserId).setId(regiserId);
+                carts.add(new Cart());
                 check = false;
                 System.out.print("Tebrikler başarıyla hesap oluşturdunuz...\n\n");
                 customers.add(new Customer());

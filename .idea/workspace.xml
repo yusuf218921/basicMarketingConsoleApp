@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="products eklenme aşaması">
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_15_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2022_3_23_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ElectronicProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FurnitureProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HouseholdAppliancesProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CartAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CartList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +31,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

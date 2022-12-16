@@ -1,28 +1,30 @@
-public class CartMenu extends Statics implements Menu{
+public class CartMenu extends Statics implements Menu {
     @Override
     public void menu() {
         System.out.println("\n\nSepetinize Hoş Geldiniz...");
         while (loop) {
-            CartList listTheCart = new CartList();
+            //CartList listTheCart = new CartList();
             System.out.println("\n1- Sepeti Listele");
             System.out.println("2- Ürün Kaldır");
-            System.out.println("0- Çıkış Yap");
+            System.out.println("3- Alışverişi Tamamla");
+            System.out.println("0- Geri Dön");
             System.out.print("\nYapmak İşlediğiniz İşlemin Numarasını Girin -->");
             switch (scanner.nextInt()) {
                 case 1:
-                    listTheCart.list();
-                    System.out.println("Toplam : " + listTheCart.sum());
+                    carts.get(loginId).list();
+                    //listTheCart.list();
+                    System.out.println("Toplam : " + carts.get(loginId).sum());
                     break;
                 case 2:
                     boolean loop2 = true;
-                    listTheCart.list();
+                    //listTheCart.list();
                     while (loop2) {
                         System.out.print("\nSilmek istediğiniz ürünün numarasını girin -->");
                         int i = scanner.nextInt();
-                        if (i <= cart.size() && i > 0) {
-                            listTheCart.listProduct(i - 1);
+                        if (i <= carts.get(loginId).cartProducts.size() && i > 0) {
+                            carts.get(loginId).listProduct(i - 1);
                             System.out.print(" Ürünü Başarılı Bir Şekilde Silindi\n");
-                            cart.remove(i - 1);
+                            carts.get(loginId).cartProducts.remove(i - 1);
                             loop2 = false;
                         } else if (i == 0) {
                             loop2 = false;
@@ -32,6 +34,19 @@ public class CartMenu extends Statics implements Menu{
                         }
                     }
                     break;
+                case 3:
+                    if (customers.get(loginId).getBalance() >= carts.get(loginId).sum()) {
+                        customers.get(loginId).withdrawBalance(carts.get(loginId).sum());
+                        carts.get(loginId).cartProducts.clear();
+                        System.out.println("Alışverişiniz Başarıyla Tamamlandı...");
+                    } else {
+                        System.out.println("Hesabınızda yeteri miktar bulunamadı!");
+                    }
+                    System.out.println("Devam etmek için herhangi bir tuşa basınız...");
+                    try {
+                        System.in.read();
+                    } catch (Exception e) {
+                    }
                 case 0:
                     loop = false;
                     break;

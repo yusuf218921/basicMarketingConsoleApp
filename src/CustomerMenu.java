@@ -73,6 +73,71 @@ public class CustomerMenu extends Statics implements Menu {
                     } catch (Exception e) {
                     }
                 }
+                case 4 -> {
+                    boolean categoryLoop = true;
+                    while (loop) {
+                        int category;
+                        System.out.println("\n\n\n**********KATEGORİLER**********\n\n\n");
+                        System.out.println("1-) Elektronik");
+                        System.out.println("2-) Mobilya");
+                        System.out.println("3-) Ev Aletleri");
+                        System.out.println("\n\n0-) Geri dön");
+                        category = scanner.nextInt();
+                        if (category == 1) {
+                            for (BaseProduct product : productsOnTheMarket) {
+                                if (product.getCategoryId() == 0) {
+                                    System.out.println("\n\nüRÜN ID : " + product.getProductId());
+                                    System.out.println("ÜRÜN MARKASI : " + product.productCompany);
+                                    System.out.println("üRÜN ADI : " + product.productName);
+                                    System.out.println("ÜRÜN FİYATI : " + product.price + "tl");
+                                }
+                            }
+                            System.out.println("Satın almak istediğiniz ürünün id'sini giriniz -> ");
+                            carts.get(loginId).cartAdd(scanner.nextInt());
+                            System.out.println("Ürün başarıyla sepete eklendi");
+                            categoryLoop = false;
+                        } else if (category == 2) {
+                            for (BaseProduct product : productsOnTheMarket) {
+                                if (product.getCategoryId() == 1) {
+                                    System.out.println("\n\nüRÜN ID : " + product.getProductId());
+                                    System.out.println("ÜRÜN MARKASI : " + product.productCompany);
+                                    System.out.println("üRÜN ADI : " + product.productName);
+                                    System.out.println("ÜRÜN FİYATI : " + product.price + "tl");
+                                }
+                            }
+                            System.out.println("Satın almak istediğiniz ürünün id'sini giriniz -> ");
+                            carts.get(loginId).cartAdd(scanner.nextInt());
+                            System.out.println("Ürün başarıyla sepete eklendi");
+                            categoryLoop = false;
+
+                        } else if (category == 3) {
+                            for (BaseProduct product : productsOnTheMarket) {
+                                if (product.getCategoryId() == 2) {
+                                    System.out.println("\n\nüRÜN ID : " + product.getProductId());
+                                    System.out.println("ÜRÜN MARKASI : " + product.productCompany);
+                                    System.out.println("üRÜN ADI : " + product.productName);
+                                    System.out.println("ÜRÜN FİYATI : " + product.price + "tl");
+                                }
+                            }
+                            System.out.println("Satın almak istediğiniz ürünün id'sini giriniz -> ");
+                            carts.get(loginId).cartAdd(scanner.nextInt());
+                            System.out.println("Ürün başarıyla sepete eklendi");
+                            categoryLoop = false;
+                        } else if (category == 0) {
+                            categoryLoop = false;
+                            loop = false;
+
+                        } else {
+                            System.out.println("Yanlış numara girdiniz lütfen tekrar deneyiniz");
+                        }
+                    }
+                    loop = true;
+                }
+                case 5 -> {
+                    menu = new CartMenu();
+                    menu.menu();
+                    loop = true;
+                }
                 case 6 -> {
                     System.out.println("Ana menüye geri gönderiliyorsunuz lütfen bekleyiniz...");
                     loop = false;

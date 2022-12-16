@@ -4,30 +4,29 @@ public class ProductManager extends Main {
         while (productManagerAddLoop) {
 
             System.out.print("\nLütfen ürünün katagorisini giriniz ->");
-            String category = scanner.nextLine();
+            String category = scanner.next();
 
-            boolean categoryTrue=false;
+            boolean categoryTrue = false;
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 2; j++) {
-                    if(categoryTrue) break;
-                    else if(category.toLowerCase().equals(Statics.categories[i][j].toLowerCase())){
+                    if (categoryTrue) break;
+                    else if (category.toLowerCase().equals(Statics.categories[i][j].toLowerCase())) {
                         categoryTrue = true;
                         break;
                     }
                 }
             }
-            if(categoryTrue=false){
+            if (categoryTrue = false) {
                 System.out.println("Yanlış bir katagori girdiniz. Lütfen Aşağıdaki katagorilerden birisini yazın");
-            }
-            else{
+            } else {
                 System.out.print("\nLütfen ürünün ücretini giriniz ->");
                 double price = scanner.nextInt();
                 System.out.print("\nLütfen ürünün şirketini giriniz ->");
                 String companyName = scanner.next();
                 System.out.print("\nLütfen ürünün adını giriniz ->");
                 String productName = scanner.next();
-                productsOnTheMarket.add(new Product(price,category, companyName, productName));
-                productManagerAddLoop=false;
+                productsOnTheMarket.add(new Product(price, category, companyName, productName));
+                productManagerAddLoop = false;
             }
 
             for (int i = 0; i < 3; i++) {
@@ -38,6 +37,7 @@ public class ProductManager extends Main {
             }
         }
     }
+
     public void removeProduct() {
         System.out.print("Kaldıracağınız ürünün idsini giriniz : ");
         productsOnTheMarket.remove(scanner.nextInt() - 1);

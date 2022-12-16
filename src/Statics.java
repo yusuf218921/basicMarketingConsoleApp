@@ -13,9 +13,10 @@ public class Statics {
     static ArrayList<Account> accounts = new ArrayList<>();
     static Menu menu;
     static ArrayList<Customer> customers = new ArrayList<>();
-    static ArrayList<BaseProduct> cart = new ArrayList<>();
+    //static ArrayList<BaseProduct> cartProducts = new ArrayList<>();
     static ArrayList<Administrator> admins = new ArrayList<>();
     static ArrayList<BaseProduct> productsOnTheMarket = new ArrayList<>();
-    static String[][] categories = {{"Electronic","Elektronik"},{"Furniture","Mobilya"},{"Household appliances","Ev aletleri"}};
+    static String[][] categories = {{"Electronic", "Elektronik"}, {"Furniture", "Mobilya"}, {"Household appliances", "Ev aletleri"}};
+    static ArrayList<Cart> carts = new ArrayList<>();
 }
 
