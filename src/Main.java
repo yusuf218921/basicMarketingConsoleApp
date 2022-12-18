@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Main extends Statics {
 
-
+    static boolean deneme = false;
     public static void main(String[] args) {
         new Admins().admins();
         new Products().products();
@@ -22,5 +24,8 @@ public class Main extends Statics {
                 loop = true;
             }
         }
+
+
+
     }
 }

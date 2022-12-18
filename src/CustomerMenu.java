@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class CustomerMenu extends Statics implements Menu {
 
     @Override
@@ -13,7 +15,16 @@ public class CustomerMenu extends Statics implements Menu {
             System.out.println("7-) Uygulamadan Çıkış yap");
 
             System.out.print("\n\n\nLütfen yapmak istediğiniz işlemi seçiniz -> ");
-            selection = scanner.nextInt();
+            boolean check = true;
+            while (check) {
+                try {
+                    selection = new Scanner(System.in).nextInt();
+                    check = false;
+                } catch (Exception e) {
+                    System.out.println("HATA");
+                    System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
+                }
+            }
 
             switch (selection) {
                 case 1 -> {
@@ -30,7 +41,6 @@ public class CustomerMenu extends Statics implements Menu {
                     }
                 }
                 case 2 -> {
-                    int secenekGuncelleme;
                     boolean kontrol = true;
                     while (kontrol) {
                         System.out.println("\n\n\n***************Güncelleme Ekranı***************\n\n");
@@ -41,9 +51,18 @@ public class CustomerMenu extends Statics implements Menu {
                         System.out.println("5-) Geri Dön");
 
                         System.out.print("Lütfen güncellemek istediğiniz bilgiyi seçiniz -> ");
-                        secenekGuncelleme = scanner.nextInt();
+                        check = true;
+                        while (check) {
+                            try {
+                                selection = new Scanner(System.in).nextInt();
+                                check = false;
+                            } catch (Exception e) {
+                                System.out.println("HATA");
+                                System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
+                            }
+                        }
 
-                        switch (secenekGuncelleme) {
+                        switch (selection) {
                             case 1 -> new CustomerConfig().configFirstName();
                             case 2 -> new CustomerConfig().configLastName();
                             case 3 -> new CustomerConfig().configTel();
@@ -76,13 +95,23 @@ public class CustomerMenu extends Statics implements Menu {
                 case 4 -> {
                     boolean categoryLoop = true;
                     while (loop) {
-                        int category;
+                        int category=-1;
                         System.out.println("\n\n\n**********KATEGORİLER**********\n\n\n");
                         System.out.println("1-) Elektronik");
                         System.out.println("2-) Mobilya");
                         System.out.println("3-) Ev Aletleri");
                         System.out.println("\n\n0-) Geri dön");
-                        category = scanner.nextInt();
+
+                        check = true;
+                        while (check) {
+                            try {
+                                category = new Scanner(System.in).nextInt();
+                                check = false;
+                            } catch (Exception e) {
+                                System.out.println("HATA");
+                                System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
+                            }
+                        }
                         if (category == 1) {
                             for (BaseProduct product : productsOnTheMarket) {
                                 if (product.getCategoryId() == 0) {
@@ -92,8 +121,18 @@ public class CustomerMenu extends Statics implements Menu {
                                     System.out.println("ÜRÜN FİYATI : " + product.price + "tl");
                                 }
                             }
-                            System.out.println("Satın almak istediğiniz ürünün id'sini giriniz -> ");
-                            carts.get(loginId).cartAdd(scanner.nextInt());
+                            System.out.println("\n Satın almak istediğiniz ürünün id'sini giriniz -> ");
+                            check = true;
+                            while (check) {
+                                try {
+                                    selection = new Scanner(System.in).nextInt();
+                                    check = false;
+                                } catch (Exception e) {
+                                    System.out.println("HATA");
+                                    System.out.print("\nSatın almak istediğiniz ürünün id'sini giriniz -> ");
+                                }
+                            }
+                            carts.get(loginId).cartAdd(selection);
                             System.out.println("Ürün başarıyla sepete eklendi");
                             categoryLoop = false;
                         } else if (category == 2) {
@@ -106,7 +145,17 @@ public class CustomerMenu extends Statics implements Menu {
                                 }
                             }
                             System.out.println("Satın almak istediğiniz ürünün id'sini giriniz -> ");
-                            carts.get(loginId).cartAdd(scanner.nextInt());
+                            check = true;
+                            while (check) {
+                                try {
+                                    selection = new Scanner(System.in).nextInt();
+                                    check = false;
+                                } catch (Exception e) {
+                                    System.out.println("HATA");
+                                    System.out.print("\nSatın almak istediğiniz ürünün id'sini giriniz -> ");
+                                }
+                            }
+                            carts.get(loginId).cartAdd(selection);
                             System.out.println("Ürün başarıyla sepete eklendi");
                             categoryLoop = false;
 
@@ -120,7 +169,17 @@ public class CustomerMenu extends Statics implements Menu {
                                 }
                             }
                             System.out.println("Satın almak istediğiniz ürünün id'sini giriniz -> ");
-                            carts.get(loginId).cartAdd(scanner.nextInt());
+                            check = true;
+                            while (check) {
+                                try {
+                                    selection = new Scanner(System.in).nextInt();
+                                    check = false;
+                                } catch (Exception e) {
+                                    System.out.println("HATA");
+                                    System.out.print("\nSatın almak istediğiniz ürünün id'sini giriniz -> ");
+                                }
+                            }
+                            carts.get(loginId).cartAdd(selection);
                             System.out.println("Ürün başarıyla sepete eklendi");
                             categoryLoop = false;
                         } else if (category == 0) {

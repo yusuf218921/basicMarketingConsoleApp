@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MainMenu extends Statics implements Menu {
     @Override
     public void menu() {
@@ -9,9 +11,16 @@ public class MainMenu extends Statics implements Menu {
             System.out.println("3-) Uygulamadan çıkış yap");
 
             System.out.print("\n\n\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
-
-            selection = scanner.nextInt();
-
+            boolean check = true;
+            while (check) {
+                try {
+                    selection = new Scanner(System.in).nextInt();
+                    check = false;
+                } catch (Exception e) {
+                    System.out.println("HATA");
+                    System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
+                }
+            }
             switch (selection) {
                 case 1 -> {
                     System.out.println("Giriş Ekranına Yönlendiriliyorsunuz Lütfen Bekleyiniz...");

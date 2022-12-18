@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class AccountLogin extends Statics {
     boolean check = true;
 
@@ -23,8 +25,16 @@ public class AccountLogin extends Statics {
                     throw new RuntimeException(e);
                 }
             } else {
-                System.out.print("Yanlış kullanııcı veya şifre girdiniz ,giriş işlemine devam etmek için \"true\", ana menüye geri dönmek için \"false\" yazınız ->");
-                check = scanner.nextBoolean();
+                System.out.print("Yanlış kullanıcı veya şifre girdiniz ,giriş işlemine devam etmek için \"true\", ana menüye geri dönmek için \"false\" yazınız ->");
+                while (check){
+                    try {
+                        check = new Scanner(System.in).nextBoolean();
+                        break;
+                    } catch (Exception e) {
+                        System.out.println("HATA");
+                        System.out.print("Yanlış kullanıcı veya şifre girdiniz ,giriş işlemine devam etmek için \"true\", ana menüye geri dönmek için \"false\" yazınız ->");
+                    }
+                }
             }
         }
 

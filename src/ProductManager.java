@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ProductManager extends Main {
     public void addProduct() {
         boolean productManagerAddLoop = true;
@@ -6,18 +8,24 @@ public class ProductManager extends Main {
             System.out.print("\nLütfen ürünün katagorisini giriniz ->");
             String category = scanner.next();
 
-            boolean categoryTrue = false;
+            int categoryTrue = 0;
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 2; j++) {
-                    if (categoryTrue) break;
+                    if (categoryTrue==1) break;
                     else if (category.toLowerCase().equals(Statics.categories[i][j].toLowerCase())) {
-                        categoryTrue = true;
+                        categoryTrue = 1;
                         break;
                     }
                 }
             }
-            if (categoryTrue = false) {
-                System.out.println("Yanlış bir katagori girdiniz. Lütfen Aşağıdaki katagorilerden birisini yazın");
+            if (categoryTrue == 0) {
+                System.out.println("Yanlış bir katagori girdiniz. Lütfen Aşağıdaki katagorilerden birisini yazın\n");
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 2; j++) {
+                        System.out.print(Statics.categories[i][j]);
+                    }
+                    System.out.println();
+                }
             } else {
                 System.out.print("\nLütfen ürünün ücretini giriniz ->");
                 double price = scanner.nextInt();
@@ -29,18 +37,23 @@ public class ProductManager extends Main {
                 productManagerAddLoop = false;
             }
 
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(Statics.categories[i][j]);
-                }
-                System.out.println();
-            }
+
         }
     }
 
     public void removeProduct() {
         System.out.print("Kaldıracağınız ürünün idsini giriniz : ");
-        productsOnTheMarket.remove(scanner.nextInt() - 1);
+        boolean check = true;
+        while (check) {
+            try {
+                selection = new Scanner(System.in).nextInt();
+                check = false;
+            } catch (Exception e) {
+                System.out.println("HATA");
+                System.out.print("Kaldıracağınız ürünün idsini giriniz : ");
+            }
+        }
+        productsOnTheMarket.remove(selection - 1);
     }
 
     public void list() {

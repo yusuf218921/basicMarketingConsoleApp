@@ -1,15 +1,26 @@
+import java.util.Scanner;
+
 public class CartMenu extends Statics implements Menu {
     @Override
     public void menu() {
         System.out.println("\n\nSepetinize Hoş Geldiniz...");
         while (loop) {
-            //CartList listTheCart = new CartList();
             System.out.println("\n1- Sepeti Listele");
             System.out.println("2- Ürün Kaldır");
             System.out.println("3- Alışverişi Tamamla");
             System.out.println("0- Geri Dön");
-            System.out.print("\nYapmak İşlediğiniz İşlemin Numarasını Girin -->");
-            switch (scanner.nextInt()) {
+            System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz ->");
+            boolean check = true;
+            while (check) {
+                try {
+                    selection = new Scanner(System.in).nextInt();
+                    check = false;
+                } catch (Exception e) {
+                    System.out.println("HATA");
+                    System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
+                }
+            }
+            switch (selection) {
                 case 1:
                     carts.get(loginId).list();
                     //listTheCart.list();

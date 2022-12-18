@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class AdminMenu extends Statics implements Menu {
     @Override
     public void menu() {
@@ -10,7 +12,16 @@ public class AdminMenu extends Statics implements Menu {
             System.out.println(("5-) Ana menüye geri dön"));
 
             System.out.print("\n\nLütfen yapmak istediğiniz işlemi seçiniz -> ");
-            selection = scanner.nextInt();
+            boolean check = true;
+            while (check) {
+                try {
+                    selection = new Scanner(System.in).nextInt();
+                    check = false;
+                } catch (Exception e) {
+                    System.out.println("HATA");
+                    System.out.print("\nLütfen yapmak istediğiniz işlemin numarısını giriniz -> ");
+                }
+            }
             switch (selection) {
                 case 1 -> {
                     new AccountsList().list();
