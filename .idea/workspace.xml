@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="proje tamamlandı">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statics.java" afterDir="false" />
-    </list>
+    <list default="true" id="d5b8355d-a22c-4b68-99a6-5874fb28bd27" name="Changes" comment="bir kaç hata düzeltmesi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -358,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671400689383</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="bir kaç hata düzeltmesi">
+      <created>1671406715728</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1671406715728</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -437,7 +434,8 @@
     <MESSAGE value="add product komutu eklendi." />
     <MESSAGE value="products eklenme aşaması" />
     <MESSAGE value="proje tamamlandı" />
-    <option name="LAST_COMMIT_MESSAGE" value="proje tamamlandı" />
+    <MESSAGE value="bir kaç hata düzeltmesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="bir kaç hata düzeltmesi" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
