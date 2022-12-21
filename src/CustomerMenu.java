@@ -85,7 +85,6 @@ public class CustomerMenu extends Statics implements Menu {
                     System.out.print("Yükleme yapılacak tutar: ");
                     topUp = scanner.nextInt();
                     customers.get(loginId).loadBalance(topUp);
-                    System.out.println("Yükleme Başarıyla gerçekleşti...");
                     System.out.print("Devam etmek için herhangi bir tuşa basınız...");
                     try {
                         System.in.read();

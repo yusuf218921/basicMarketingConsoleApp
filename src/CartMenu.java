@@ -30,8 +30,18 @@ public class CartMenu extends Statics implements Menu {
                     boolean loop2 = true;
                     //listTheCart.list();
                     while (loop2) {
-                        System.out.print("\nSilmek istediğiniz ürünün numarasını girin -->");
-                        int i = scanner.nextInt();
+
+                        int i;
+                        while (true) {
+                            try {
+                                System.out.print("\nSilmek istediğiniz ürünün numarasını girin -->");
+                                i=scanner.nextInt();
+                                break;
+                            } catch (Exception e) {
+                                scanner.nextLine();
+                                System.out.println("Hatalı değer girildi lütfen tekrar deneyiniz");
+                            }
+                        }
                         if (i <= carts.get(loginId).cartProducts.size() && i > 0) {
                             carts.get(loginId).listProduct(i - 1);
                             System.out.print(" Ürünü Başarılı Bir Şekilde Silindi\n");

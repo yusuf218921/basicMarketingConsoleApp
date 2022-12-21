@@ -42,7 +42,14 @@ public class Customer extends Account {
     }
 
     public void loadBalance(int topUp) {
-        balance += topUp;
+        if (topUp < 0) {
+            System.out.println("0 dan küçük para yüklenemez!");
+        }
+        else {
+            balance += topUp;
+            System.out.println("Yükleme Başarıyla gerçekleşti...");
+        }
+
     }
 
     public void withdrawBalance(int total) {
